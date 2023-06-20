@@ -1,0 +1,3889 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>OpenMRS Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">BDD Tests</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 26, 2023 23:56:08</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@thrid</a><a class="dropdown-item" href="#">@Logut</a><a class="dropdown-item" href="#">@fourth</a><a class="dropdown-item" href="#">@sixth</a><a class="dropdown-item" href="#">@fifth</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">OpenMRS headerpage application</p>
+            <p class="text-sm">
+              <span>11:56:10 pm</span> / <span>00:02:10:402</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">OpenMRS headerpage application</h5>
+<span class='badge badge-success'>05.26.2023 11:56:10 pm</span>
+<span class='badge badge-danger'>05.26.2023 11:58:20 pm</span>
+<span class='badge badge-default'>00:02:10:402</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>verify My account</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.loginpage.userEnterTheUsernameAsAdminAndPasswordAsAdmin123()">
+                <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickSessionLinkIsolationWard()">
+                <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickOnLogin()">
+                <span>When user click  on login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userClickOnMyAccount()">
+                <span>Then user click on my account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userCanSeeDetails()">
+                <span>Then user can see details</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>verify change password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.loginpage.userEnterTheUsernameAsAdminAndPasswordAsAdmin123()">
+                <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickSessionLinkIsolationWard()">
+                <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickOnLogin()">
+                <span>When user click  on login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userClickOnMyAccount()">
+                <span>Then user click on my account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userClickOnChangePassword()">
+                <span>Then user click on change password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userEnterOldPwd()">
+                <span>Then user enter old pwd</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userEnterNewPwd()">
+                <span>Then user enter new pwd</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userEnterConfirmPwd()">
+                <span>Then user enter confirm pwd</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userClickOnSave()">
+                <span>Then user click on save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.headerpage.userCanGetUpdate()">
+                <span>Then user can get update</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>verify My Languages</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>verify My Languages</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click  on login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on my account</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given user click on My Languages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select primary language as "English (United Kingdom)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select proficient language as "English (United Kingdom)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click save</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get update msg</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>verify My Languages</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click  on login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on my account</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given user click on My Languages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select primary language as "Spanish"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select proficient language as "Spanish"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click save</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get update msg</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="48"><span class="badge log pass-bg mr-2">Pass</span>verify My Languages</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click  on login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on my account</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given user click on My Languages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select primary language as "French"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select proficient language as "French"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click save</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get update msg</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="60"><span class="badge log pass-bg mr-2">Pass</span>verify My Languages</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click  on login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on my account</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given user click on My Languages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select primary language as "Italian"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select proficient language as "Italian"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click save</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get update msg</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>verify My Languages</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click  on login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on my account</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given user click on My Languages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select primary language as "Portuguese (Brazil)"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user select proficient language as "Portuguese"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click save</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get update msg</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="84"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">OpenMRS application</p>
+            <p class="text-sm">
+              <span>11:58:20 pm</span> / <span>00:17:50:166</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">OpenMRS application</h5>
+<span class='badge badge-success'>05.26.2023 11:58:20 pm</span>
+<span class='badge badge-danger'>05.27.2023 12:16:10 am</span>
+<span class='badge badge-default'>00:17:50:166</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=84</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>verify find patient record</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnFindPatientRecord()">
+                <span>Then user click on find patient record</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToFindPatientRecordPage()">
+                <span>Then user should navigate to find patient record page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="91"><span class="badge log pass-bg mr-2">Pass</span>verify find patient details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnFindPatientRecord()">
+                <span>Then user click on find patient record</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userCanGetPatientDetailsByTableHeader()">
+                <span>Then user can get patient details(By table header)</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="97"><span class="badge log pass-bg mr-2">Pass</span>verify find particular patient details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="98"><span class="badge log pass-bg mr-2">Pass</span>verify find particular patient details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on find patient record</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get particular patient details "100HRU"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="104"><span class="badge log pass-bg mr-2">Pass</span>verify find particular patient details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on find patient record</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get particular patient details "Mary C Jane"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="110"><span class="badge log pass-bg mr-2">Pass</span>verify find particular patient details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on find patient record</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get particular patient details "F"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>verify find particular patient details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on find patient record</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get particular patient details "39"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="122"><span class="badge log pass-bg mr-2">Pass</span>verify find particular patient details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on find patient record</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get particular patient details "03.Jul.1983"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>verify find patient record by id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnFindPatientRecord()">
+                <span>Then user click on find patient record</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userEnterPatientIdInSearchBox()">
+                <span>Then user enter patient id in search box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userCanGetParticularPatientDetail()">
+                <span>Then user can get particular patient detail</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>verify find patient record by id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnFindPatientRecord()">
+                <span>Then user click on find patient record</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userEnterPatientIdInSearchBox()">
+                <span>Then user enter patient id in search box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userCanGetParticularPatientDetail()">
+                <span>Then user can get particular patient detail</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="142"><span class="badge log pass-bg mr-2">Pass</span>verify find patient details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnFindPatientRecord()">
+                <span>Then user click on find patient record</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userEnterPatientIdInSearchBox()">
+                <span>Then user enter patient id in search box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userCanGetParticularPatientDetail()">
+                <span>Then user can get particular patient detail</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeTheHealthDescription()">
+                <span>Then user able to see the health description</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="150"><span class="badge log pass-bg mr-2">Pass</span>verify Active Visits</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnActiveVisits()">
+                <span>Then user should click on Active Visits</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToActiveVisitsPage()">
+                <span>Then user should navigate to Active Visits page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="156"><span class="badge log fail-bg mr-2">Fail</span>verify Active Visits Search field</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnActiveVisits()">
+                <span>Then user should click on Active Visits</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToActiveVisitsPage()">
+                <span>Then user should navigate to Active Visits page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Pages.homepage.userEnterValueIntoTheSearchField()">
+                <span>Then user enter value into the search field</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type="search"]"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eaf6e810f201389091ba2f855efbab08, findElement {using=xpath, value=//input[@type="search"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56198/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eaf6e810f201389091ba2f855efbab08
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Pages.homepage.userEnterValueIntoTheSearchField(homepage.java:87)
+	at ✽.user enter value into the search field(file:///C:/Users/divya/eclipse-workspace/OpenMRS/src/main/java/feature/home.feature:50)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userCanSeeTheSearchResults()">
+                <span>Then user can see the search results</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+      <div>After Failed Scenarion
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../../screenshot/embedded1.png' src="../../screenshot/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="164"><span class="badge log pass-bg mr-2">Pass</span>verify Active Visits header count</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnActiveVisits()">
+                <span>Then user should click on Active Visits</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToActiveVisitsPage()">
+                <span>Then user should navigate to Active Visits page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userCanSeeTheHeaderDetails()">
+                <span>Then user can see the header details</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="171"><span class="badge log pass-bg mr-2">Pass</span>verify Active Visits header details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="172"><span class="badge log pass-bg mr-2">Pass</span>verify Active Visits header details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Active Visits</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to Active Visits page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can see the header details as "OpenMRS ID: 100HRU"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get the particular patient details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="180"><span class="badge log pass-bg mr-2">Pass</span>verify Active Visits header details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Active Visits</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to Active Visits page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can see the header details as "Chris Soo-Jin Demetriou"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get the particular patient details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="188"><span class="badge log pass-bg mr-2">Pass</span>verify Active Visits header details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Active Visits</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to Active Visits page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can see the header details as "Admission"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get the particular patient details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="196"><span class="badge log pass-bg mr-2">Pass</span>verify Active Visits header details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Active Visits</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to Active Visits page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can see the header details as "Facility Visit"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get the particular patient details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="204"><span class="badge log pass-bg mr-2">Pass</span>verify Capture Vitals</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnCaptureVitals()">
+                <span>Then user should click on Capture Vitals</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToCaptureVitalsPage()">
+                <span>Then user should navigate to Capture Vitals page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="210"><span class="badge log pass-bg mr-2">Pass</span>verify Capture Vitals search field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnCaptureVitals()">
+                <span>Then user should click on Capture Vitals</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldPassTheValueInSearchField()">
+                <span>Then user should pass the value in search field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userCanGetSearchResults()">
+                <span>Then user can get search results</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="217"><span class="badge log pass-bg mr-2">Pass</span>verify Capture Vitals search field details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="218"><span class="badge log pass-bg mr-2">Pass</span>verify Capture Vitals search field details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Capture Vitals</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get search results as "100HRU"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see the patient details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="225"><span class="badge log pass-bg mr-2">Pass</span>verify Capture Vitals search field details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Capture Vitals</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get search results as "Chris Soo-Jin Demetriou"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see the patient details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="232"><span class="badge log pass-bg mr-2">Pass</span>verify Capture Vitals search field details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Capture Vitals</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get search results as "M"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see the patient details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="239"><span class="badge log pass-bg mr-2">Pass</span>verify Capture Vitals search field details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Capture Vitals</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user can get search results as "23"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see the patient details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="246"><span class="badge log fail-bg mr-2">Fail</span>verify Register_apatient</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="BEFORE">
+                <span>Hooks.hooks.userShouldNavigateToTheApplication()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: loader has changed while resolving nodes
+  (Session info: chrome=113.0.5672.127) 
+Host info: host: 'LAPTOP-L3J7KBEK', ip: '192.168.137.1'
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:18)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userShouldClickOnRegisterApatient()">
+                <span>Then user should click on Register_apatient</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userShouldNavigateToRegisterApatientPage()">
+                <span>Then user should navigate to Register_apatient page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56442/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at Hooks.hooks.AfterScenario(hooks.java:29)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="252"><span class="badge log fail-bg mr-2">Fail</span>verify Register patient details</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnRegisterPatient()">
+                <span>Then user click on Register patient</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Pages.homepage.userEnterTheGivenAndFamilyName()">
+                <span>Then user enter the given and family name</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='givenName']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa575b7929e905f943b472000c256930, findElement {using=name, value=givenName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56474}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56474/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa575b7929e905f943b472000c256930
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Pages.homepage.userEnterTheGivenAndFamilyName(homepage.java:191)
+	at ✽.user enter the given and family name(file:///C:/Users/divya/eclipse-workspace/OpenMRS/src/main/java/feature/home.feature:102)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userClickOnNextButton()">
+                <span>Then user click on next button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userNeedToSelectGender()">
+                <span>Then user need to select gender</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userClickOnNextButton()">
+                <span>Then user click on next button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userNeedToEnterThaPatientBirthDayDetails()">
+                <span>Then user need to enter tha patient birth day details</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userClickOnNextButton()">
+                <span>Then user click on next button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userNeedToEnterThePatientAddress()">
+                <span>Then user need to enter the patient address</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.clickOnConfirmButton()">
+                <span>Then click on confirm button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="Pages.homepage.userShouldNavigateToParticularPageAndPatientIdWillBeCreated()">
+                <span>Then user should navigate to particular page and patient id will be created</span>
+      <div><table class='markup-table table '><tr><td>29 Feb 2000</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+      <div>After Failed Scenarion
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../../screenshot/embedded2.png' src="../../screenshot/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="266"><span class="badge log pass-bg mr-2">Pass</span>verify Appointment Scheduling</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAppointmentScheduling()">
+                <span>Then user should click on Appointment Scheduling</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToAppointmentSchedulingPage()">
+                <span>Then user should navigate to Appointment Scheduling page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="272"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Service Types</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAppointmentScheduling()">
+                <span>Then user should click on Appointment Scheduling</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.user_should_click_on_manage_service_types()">
+                <span>Then user should click on Manage Service Types</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.user_should_navigate_to_manage_service_types_page()">
+                <span>Then user should navigate to Manage Service Types page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="279"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Service table header</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAppointmentScheduling()">
+                <span>Then user should click on Appointment Scheduling</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.user_should_click_on_manage_service_types()">
+                <span>Then user should click on Manage Service Types</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.user_should_navigate_to_manage_service_types_page()">
+                <span>Then user should navigate to Manage Service Types page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeManageServiceTableHeader()">
+                <span>Then user able to see Manage Service table header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="287"><span class="badge log pass-bg mr-2">Pass</span>verify  Manage Appointment Blocks</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAppointmentScheduling()">
+                <span>Then user should click on Appointment Scheduling</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageAppointmentBlocks()">
+                <span>Then user should click on  Manage Appointment Blocks</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageAppointmentBlocksPage()">
+                <span>Then user should navigate to  Manage Appointment Blocks page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="294"><span class="badge log pass-bg mr-2">Pass</span>verify  Manage Appointments</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAppointmentScheduling()">
+                <span>Then user should click on Appointment Scheduling</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageAppointments()">
+                <span>Then user should click on  Manage Appointments</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageAppointmentsPage()">
+                <span>Then user should navigate to Manage Appointments page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="301"><span class="badge log pass-bg mr-2">Pass</span>verify Daily Appointments</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAppointmentScheduling()">
+                <span>Then user should click on Appointment Scheduling</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnDailyAppointments()">
+                <span>Then user should click on Daily Appointments</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToDailyAppointmentsPage()">
+                <span>Then user should navigate to Daily Appointments page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="308"><span class="badge log pass-bg mr-2">Pass</span>verify Appointment Requests</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAppointmentScheduling()">
+                <span>Then user should click on Appointment Scheduling</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAppointmentRequests()">
+                <span>Then user should click on Appointment Requests</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToAppointmentRequestsPage()">
+                <span>Then user should navigate to Appointment Requests page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="315"><span class="badge log pass-bg mr-2">Pass</span>verify patient reports</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnReports()">
+                <span>Then user click on reports</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToReportpage()">
+                <span>Then user should navigate to reportpage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="321"><span class="badge log pass-bg mr-2">Pass</span>verify patient reports</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnReports()">
+                <span>Then user click on reports</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToParticularPage()">
+                <span>Then user should navigate to particular page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userCanSeeTheText()">
+                <span>Then user can see the text</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="328"><span class="badge log pass-bg mr-2">Pass</span>verify data management</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnDataManagement()">
+                <span>Then user click on data management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToDataManagementPage()">
+                <span>Then user should navigate to data management page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="334"><span class="badge log pass-bg mr-2">Pass</span>verify data management detail</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnDataManagement()">
+                <span>Then user click on data management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToDataManagementPage()">
+                <span>Then user should navigate to data management page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.shouldClickOnMergePatientElectronicRecords()">
+                <span>Then should click on Merge Patient Electronic Records</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToMergePatientElectronicRecordsPage()">
+                <span>Then user should navigate to Merge Patient Electronic Records page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="342"><span class="badge log pass-bg mr-2">Pass</span>verify data management detail header test</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userClickOnDataManagement()">
+                <span>Then user click on data management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToDataManagementPage()">
+                <span>Then user should navigate to data management page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.shouldClickOnMergePatientElectronicRecords()">
+                <span>Then should click on Merge Patient Electronic Records</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToMergePatientElectronicRecordsPage()">
+                <span>Then user should navigate to Merge Patient Electronic Records page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.canSeeHeaderTest()">
+                <span>Then can see header test</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="351"><span class="badge log pass-bg mr-2">Pass</span>verify Configure metadata</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnConfigureMetadata()">
+                <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToConfigureMetadataPage()">
+                <span>Then user should navigate to Configure_metadata page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="357"><span class="badge log fail-bg mr-2">Fail</span>verify Configure metadata header count</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="358"><span class="badge log fail-bg mr-2">Fail</span>verify Configure metadata header count</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Hooks.hooks.userShouldNavigateToTheApplication()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: loader has changed while resolving nodes
+  (Session info: chrome=113.0.5672.127) 
+Host info: host: 'LAPTOP-L3J7KBEK', ip: '192.168.137.1'
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:18)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Given user should login</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user should click on Configure_metadata</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user able to see metadata information  as "Concepts"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56775}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56775/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:154)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+	at Hooks.hooks.AfterScenario(hooks.java:29)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="364"><span class="badge log pass-bg mr-2">Pass</span>verify Configure metadata header count</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user able to see metadata information  as "Encounters"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="370"><span class="badge log pass-bg mr-2">Pass</span>verify Configure metadata header count</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user able to see metadata information  as "Forms"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="376"><span class="badge log pass-bg mr-2">Pass</span>verify Configure metadata header count</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user able to see metadata information  as "Locations"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="382"><span class="badge log fail-bg mr-2">Fail</span>verify Configure metadata header count</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Hooks.hooks.userShouldNavigateToTheApplication()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d154c17400d612a31dd1bf2f92eaa4bb, get {url=https://demo.openmrs.org/openmrs/login.htm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56881/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d154c17400d612a31dd1bf2f92eaa4bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:19)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Given user should login</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user should click on Configure_metadata</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user able to see metadata information  as "Patients"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+      <div>After Failed Scenarion
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../../screenshot/embedded3.png' src="../../screenshot/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="388"><span class="badge log pass-bg mr-2">Pass</span>verify Configure metadata header count</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user able to see metadata information  as "Providers"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="394"><span class="badge log pass-bg mr-2">Pass</span>verify Configure metadata header count</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user able to see metadata information  as "Roles And Privileges"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="400"><span class="badge log pass-bg mr-2">Pass</span>verify Configure metadata header count</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user should login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user able to see metadata information  as "Visits"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="406"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Encounter Types table count</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnConfigureMetadata()">
+                <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageEncounterTypes()">
+                <span>Then user should click on Manage Encounter Types</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageEncounterTypes()">
+                <span>Then user should navigate to Manage Encounter Types</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeManageEncounterTypesTableInformation()">
+                <span>Then user able to see Manage Encounter Types table information</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="414"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Forms table header</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnConfigureMetadata()">
+                <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageForms()">
+                <span>Then user should click on Manage Forms</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageForms()">
+                <span>Then user should navigate to Manage Forms</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeManageFormsTableInformation()">
+                <span>Then user able to see Manage Forms table information</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="422"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Locations</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnConfigureMetadata()">
+                <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageLocations()">
+                <span>Then user should click on Manage Locations</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageLocations()">
+                <span>Then user should navigate to Manage Locations</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeManageLocationsTableDetails()">
+                <span>Then user able to see Manage Locations table details</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="430"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Patient Identifier Types</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnConfigureMetadata()">
+                <span>Then user should click on Configure_metadata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManagePatientIdentifierTypes()">
+                <span>Then user should click on Manage Patient Identifier Types</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManagePatientIdentifierTypes()">
+                <span>Then user should navigate to Manage Patient Identifier Types</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeManagePatientIdentifierTypesTableDetails()">
+                <span>Then user able to see Manage Patient Identifier Types table details</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="438"><span class="badge log pass-bg mr-2">Pass</span>verify System Administration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToSystemAdministrationPage()">
+                <span>Then user should navigate to System Administration page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="444"><span class="badge log pass-bg mr-2">Pass</span>verify System Administration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToSystemAdministrationPage()">
+                <span>Then user should navigate to System Administration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeAvailableAdministrationLinks()">
+                <span>Then user able to see available Administration links</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="451"><span class="badge log pass-bg mr-2">Pass</span>verify System Administration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageExtensions()">
+                <span>Then user should click on Manage Extensions</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageExtensionsPage()">
+                <span>Then user should navigate to Manage Extensions page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="458"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Extensions table header</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageExtensions()">
+                <span>Then user should click on Manage Extensions</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageExtensionsPage()">
+                <span>Then user should navigate to Manage Extensions page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userIsAbleToSeeManageExtensionsTableHeader()">
+                <span>Then user is able to see Manage Extensions table header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="466"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Apps</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageApps()">
+                <span>Then user should click on Manage Apps</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageAppsPage()">
+                <span>Then user should navigate to Manage Apps page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="473"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Apps table header</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageApps()">
+                <span>Then user should click on Manage Apps</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageAppsPage()">
+                <span>Then user should navigate to Manage Apps page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeManageAppsTableHeader()">
+                <span>Then user able to see Manage Apps table header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="481"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Global Properties</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageGlobalProperties()">
+                <span>Then user should click on Manage Global Properties</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageGlobalPropertiesPage()">
+                <span>Then user should navigate to Manage Global Properties page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="488"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Accounts</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageAccounts()">
+                <span>Then user should click on Manage Accounts</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageAccountsPage()">
+                <span>Then user should navigate to Manage Accounts page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="495"><span class="badge log pass-bg mr-2">Pass</span>verify Manage Accounts table header</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnManageAccounts()">
+                <span>Then user should click on Manage Accounts</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToManageAccountsPage()">
+                <span>Then user should navigate to Manage Accounts page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeManageAccountsTableHeader()">
+                <span>Then user able to see Manage Accounts table header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="503"><span class="badge log pass-bg mr-2">Pass</span>verify Style Guide</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnStyleGuide()">
+                <span>Then user should click on Style Guide</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToStyleGuidePage()">
+                <span>Then user should navigate to Style Guide page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="510"><span class="badge log pass-bg mr-2">Pass</span>verify Style Guide header</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnStyleGuide()">
+                <span>Then user should click on Style Guide</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeStyleGuidePageHeader()">
+                <span>Then user able to see Style Guide page header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="517"><span class="badge log pass-bg mr-2">Pass</span>verify Advanced Administration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAdvancedAdministration()">
+                <span>Then user should click on Advanced Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToAdvancedAdministrationPage()">
+                <span>Then user should navigate to Advanced Administration page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="524"><span class="badge log pass-bg mr-2">Pass</span>verify Advanced Administration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.homepage.userShouldLogin()">
+                <span>Given user should login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnSystemAdministration()">
+                <span>Then user should click on System Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldClickOnAdvancedAdministration()">
+                <span>Then user should click on Advanced Administration</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userShouldNavigateToAdvancedAdministrationPage()">
+                <span>Then user should navigate to Advanced Administration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.homepage.userAbleToSeeAdvancedAdministrationHeader()">
+                <span>Then user able to see Advanced Administration header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="532"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">OpenMRS loginpage application</p>
+            <p class="text-sm">
+              <span>12:16:10 am</span> / <span>00:03:31:014</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">OpenMRS loginpage application</h5>
+<span class='badge badge-success'>05.27.2023 12:16:10 am</span>
+<span class='badge badge-danger'>05.27.2023 12:19:41 am</span>
+<span class='badge badge-default'>00:03:31:014</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=532</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="533"><span class="badge log pass-bg mr-2">Pass</span>login should be successfull</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.loginpage.userEnterTheUsernameAsAdmin()">
+                <span>And user Enter the username as admin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userEnterThePasswordAsAdmin123()">
+                <span>And user Enter the password as Admin123</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickSessionLinkIsolationWard()">
+                <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClicksLoginButton()">
+                <span>When user clicks login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userCanLoginSuccessfull()">
+                <span>Then User can login successfull</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="541"><span class="badge log pass-bg mr-2">Pass</span>login should be Failed</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="542"><span class="badge log pass-bg mr-2">Pass</span>login should be Failed</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user Enter the username as "admined"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user Enter the password as "<Admin123>"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click session link Inpatient Ward</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User cannot login</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="550"><span class="badge log pass-bg mr-2">Pass</span>login should be Failed</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user Enter the username as "admin"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user Enter the password as "<Admin123>"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click session link Inpatient Ward</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User cannot login</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="558"><span class="badge log pass-bg mr-2">Pass</span>login should be Failed</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user Enter the username as "admined"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user Enter the password as "<Admin123>"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click session link Inpatient Ward</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User cannot login</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="566"><span class="badge log pass-bg mr-2">Pass</span>Location for this session</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.loginpage.userEnterTheUsernameAsAdminAndPasswordAsAdmin123()">
+                <span>And user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.verifyTheCountOfLinks()">
+                <span>Then verify the count of links</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="571"><span class="badge log pass-bg mr-2">Pass</span>login should be fail</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.loginpage.userEnterTheUsernameAsAdminAndPasswordAsAdmin123()">
+                <span>And user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userWithoutClickOnSessionLinkAndClicksLoginButton()">
+                <span>When user without click  on session link and clicks login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userCannotLoggedLogin()">
+                <span>Then User cannot logged login</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="577"><span class="badge log pass-bg mr-2">Pass</span>Location for the  particular session</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.loginpage.userEnterTheUsernameAsAdminAndPasswordAsAdmin123()">
+                <span>And user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickOnSessionLink()">
+                <span>When user click  on session link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClicksLoginButton()">
+                <span>When user clicks login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userNeedToNavigateToParticularSession()">
+                <span>Then user need to navigate to particular session</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="584"><span class="badge log pass-bg mr-2">Pass</span>verify cannot link button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.loginpage.userEnterTheUsernameAsAdminAndPasswordAsAdmin123()">
+                <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickSessionLinkIsolationWard()">
+                <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickOnCannotLink()">
+                <span>When user click  on cannot link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userGetUpdatedMsg()">
+                <span>Then user get updated msg</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="591"><span class="badge log pass-bg mr-2">Pass</span>verify Location for the session</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="592"><span class="badge log pass-bg mr-2">Pass</span>verify Location for the session</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click "Inpatient Ward"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to particular session</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="599"><span class="badge log pass-bg mr-2">Pass</span>verify Location for the session</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click "Isolation Ward"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to particular session</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="606"><span class="badge log pass-bg mr-2">Pass</span>verify Location for the session</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click "Laboratory"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to particular session</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="613"><span class="badge log pass-bg mr-2">Pass</span>verify Location for the session</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click "Outpatient Clinic"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to particular session</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="620"><span class="badge log pass-bg mr-2">Pass</span>verify Location for the session</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click "Pharmacy"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to particular session</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="627"><span class="badge log pass-bg mr-2">Pass</span>verify Location for the session</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click "Registration Desk"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should navigate to particular session</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="634"><span class="badge log pass-bg mr-2">Pass</span>verify Logut success</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Pages.loginpage.userEnterTheUsernameAsAdminAndPasswordAsAdmin123()">
+                <span>Given user Enter the username as admin and password as Admin123</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickSessionLinkIsolationWard()">
+                <span>When user click session link Isolation Ward</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickOnLogin()">
+                <span>When user click  on login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.userClickOnLogut()">
+                <span>Then user click on logut</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Pages.loginpage.logutSuccess()">
+                <span>Then logut success</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchSessionException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchSessionException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:05:26 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='251'>Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Register_apatient.Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:09:25 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='363'>Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Configure metadata header count.Hooks.hooks.AfterScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.SessionNotCreatedException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:05:23 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='247'>Hooks.hooks.userShouldNavigateToTheApplication()</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Register_apatient.Hooks.hooks.userShouldNavigateToTheApplication()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:09:22 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='359'>Hooks.hooks.userShouldNavigateToTheApplication()</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Configure metadata header count.Hooks.hooks.userShouldNavigateToTheApplication()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:02:05 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='161'>Then user enter value into the search field</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Active Visits Search field.Then user enter value into the search field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:05:38 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='256'>Then user enter the given and family name</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Register patient details.Then user enter the given and family name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.WebDriverException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.WebDriverException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:10:11 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='383'>Hooks.hooks.userShouldNavigateToTheApplication()</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Configure metadata header count.Hooks.hooks.userShouldNavigateToTheApplication()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@login</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:16:10 am</td>
+<td>
+<a href="#" class="linked" test-id='532' id='533'>login should be successfull</a>
+<div class="">
+<span class="badge badge-default">OpenMRS loginpage application.login should be successfull</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@thrid</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@thrid</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:05:26 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='252'>verify Register patient details</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Register patient details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Logut</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Logut</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:19:23 am</td>
+<td>
+<a href="#" class="linked" test-id='532' id='634'>verify Logut success</a>
+<div class="">
+<span class="badge badge-default">OpenMRS loginpage application.verify Logut success</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@fourth</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@fourth</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:11:55 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='430'>verify Manage Patient Identifier Types</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify Manage Patient Identifier Types</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@sixth</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sixth</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:12:33 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='444'>verify System Administration</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify System Administration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@fifth</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@fifth</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='84' id='98'>verify find particular patient details</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify find particular patient details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='84' id='104'>verify find particular patient details</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify find particular patient details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='84' id='110'>verify find particular patient details</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify find particular patient details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='84' id='116'>verify find particular patient details</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify find particular patient details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:00:09 am</td>
+<td>
+<a href="#" class="linked" test-id='84' id='122'>verify find particular patient details</a>
+<div class="">
+<span class="badge badge-default">OpenMRS application.verify find particular patient details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 26, 2023 23:56:08</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 27, 2023 00:19:41</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'>
+<b>2</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='33%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>80</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='5%'><b>5</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='93%'><b>359</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>7</b> steps failed,
+<b>18</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"OpenMRS headerpage application":130.402,"OpenMRS application":1070.166,"OpenMRS loginpage application":211.014
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@login</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@thrid</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Logut</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@fourth</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@sixth</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@fifth</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 80,
+failChild: 5,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 359,
+failGrandChild: 7,
+warningGrandChild: 0,
+skipGrandChild: 18,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

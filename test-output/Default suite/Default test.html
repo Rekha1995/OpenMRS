@@ -1,0 +1,759 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>80/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 26 23:56:08 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>1435 seconds (1435464 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Active Visits Search field", "Optional[OpenMRS application]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&quot;search&quot;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eaf6e810f201389091ba2f855efbab08, findElement {using=xpath, value=//input[@type=&quot;search&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56198/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eaf6e810f201389091ba2f855efbab08
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Pages.homepage.userEnterValueIntoTheSearchField(homepage.java:87)
+	at ✽.user enter value into the search field(file:///C:/Users/divya/eclipse-workspace/OpenMRS/src/main/java/feature/home.feature:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace905376005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace905376005'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&quot;search&quot;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eaf6e810f201389091ba2f855efbab08, findElement {using=xpath, value=//input[@type=&quot;search&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56198/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eaf6e810f201389091ba2f855efbab08
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Pages.homepage.userEnterValueIntoTheSearchField(homepage.java:87)
+	at ✽.user enter value into the search field(file:///C:/Users/divya/eclipse-workspace/OpenMRS/src/main/java/feature/home.feature:50)
+</pre></div></td>
+<td>17</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata header count", "Optional[OpenMRS application]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=113.0.5672.127)
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d154c17400d612a31dd1bf2f92eaa4bb, get {url=https://demo.openmrs.org/openmrs/login.htm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56881/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d154c17400d612a31dd1bf2f92eaa4bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace697311913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace697311913'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=113.0.5672.127)
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d154c17400d612a31dd1bf2f92eaa4bb, get {url=https://demo.openmrs.org/openmrs/login.htm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56881}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56881/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d154c17400d612a31dd1bf2f92eaa4bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:19)
+</pre></div></td>
+<td>4</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Register_apatient", "Optional[OpenMRS application]"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: loader has changed while resolving nodes
+  (Session info: chrome=113.0.5672.127) 
+Host info: host: &apos;LAPTOP-L3J7KBEK&apos;, ip: &apos;192.168.137.1&apos;
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace932380376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace932380376'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: loader has changed while resolving nodes
+  (Session info: chrome=113.0.5672.127) 
+Host info: host: &apos;LAPTOP-L3J7KBEK&apos;, ip: &apos;192.168.137.1&apos;
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:18)
+</pre></div></td>
+<td>2</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Register patient details", "Optional[OpenMRS application]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;givenName&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa575b7929e905f943b472000c256930, findElement {using=name, value=givenName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56474}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56474/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa575b7929e905f943b472000c256930
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Pages.homepage.userEnterTheGivenAndFamilyName(homepage.java:191)
+	at ✽.user enter the given and family name(file:///C:/Users/divya/eclipse-workspace/OpenMRS/src/main/java/feature/home.feature:102)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1901190557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1901190557'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;givenName&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa575b7929e905f943b472000c256930, findElement {using=name, value=givenName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56474}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56474/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa575b7929e905f943b472000c256930
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Pages.homepage.userEnterTheGivenAndFamilyName(homepage.java:191)
+	at ✽.user enter the given and family name(file:///C:/Users/divya/eclipse-workspace/OpenMRS/src/main/java/feature/home.feature:102)
+</pre></div></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata header count", "Optional[OpenMRS application]"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: loader has changed while resolving nodes
+  (Session info: chrome=113.0.5672.127) 
+Host info: host: &apos;LAPTOP-L3J7KBEK&apos;, ip: &apos;192.168.137.1&apos;
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1597061214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1597061214'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: loader has changed while resolving nodes
+  (Session info: chrome=113.0.5672.127) 
+Host info: host: &apos;LAPTOP-L3J7KBEK&apos;, ip: &apos;192.168.137.1&apos;
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:165)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at Hooks.hooks.userShouldNavigateToTheApplication(hooks.java:18)
+</pre></div></td>
+<td>2</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify My Languages", "Optional[OpenMRS headerpage application]"</td>
+<td></td>
+<td>23</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Encounter Types table count", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>20</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata header count", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Active Visits header details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>17</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Accounts", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Location for this session", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>11</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata header count", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>13</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Advanced Administration", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>20</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find particular patient details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find patient record by id", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>20</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata header count", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>13</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Daily Appointments", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>21</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify patient reports", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>14</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Location for the session", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>14</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Global Properties", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify patient reports", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>13</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Apps table header", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find particular patient details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find particular patient details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>21</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Active Visits header details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>23</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Capture Vitals", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>14</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Capture Vitals search field details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>17</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Appointment Requests", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata header count", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Patient Identifier Types", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>23</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find patient details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>19</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Active Visits header details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Capture Vitals search field details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Service Types", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>19</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify System Administration", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify System Administration", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>14</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify System Administration", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Accounts table header", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login should be successfull", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Capture Vitals search field details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify  Manage Appointments", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login should be Failed", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>12</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify My Languages", "Optional[OpenMRS headerpage application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find patient details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>20</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login should be Failed", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>13</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Location for the  particular session", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>13</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify data management detail", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>17</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify data management", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>13</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Apps", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>17</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Capture Vitals search field", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify My Languages", "Optional[OpenMRS headerpage application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login should be Failed", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>11</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Location for the session", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>12</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Advanced Administration", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>20</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Active Visits", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>20</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Locations", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Location for the session", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>19</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find particular patient details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find patient record", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>17</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Forms table header", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>17</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata header count", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>13</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Location for the session", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>14</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Active Visits header details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Appointment Scheduling", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>13</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Style Guide header", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>19</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Extensions table header", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>24</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Style Guide", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Logut success", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify data management detail header test", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>20</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find patient record by id", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>23</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Location for the session", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Capture Vitals search field details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>18</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify My Languages", "Optional[OpenMRS headerpage application]"</td>
+<td></td>
+<td>20</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify My account", "Optional[OpenMRS headerpage application]"</td>
+<td></td>
+<td>19</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Active Visits header count", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>19</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify  Manage Appointment Blocks", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>19</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify change password", "Optional[OpenMRS headerpage application]"</td>
+<td></td>
+<td>17</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Location for the session", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>14</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify find particular patient details", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Manage Service table header", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Configure metadata header count", "Optional[OpenMRS application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify My Languages", "Optional[OpenMRS headerpage application]"</td>
+<td></td>
+<td>16</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "login should be fail", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>10</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+<tr>
+<td title='Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify cannot link button", "Optional[OpenMRS loginpage application]"</td>
+<td></td>
+<td>11</td>
+<td>Runner.Test_Runner@6574a52c</td></tr>
+</table><p>
+</body>
+</html>
